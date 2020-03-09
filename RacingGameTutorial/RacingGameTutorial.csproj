@@ -46,16 +46,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form1_StoryText.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form1_StoryText.Designer.cs">
+      <DependentUpon>Form1_StoryText.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form4_RaceGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4_RaceGame.Designer.cs">
+      <DependentUpon>Form4_RaceGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2_MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_MainMenu.Designer.cs">
+      <DependentUpon>Form2_MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3_Story.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3_Story.Designer.cs">
+      <DependentUpon>Form3_Story.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5_Rankings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5_Rankings.Designer.cs">
+      <DependentUpon>Form5_Rankings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6_GetName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6_GetName.Designer.cs">
+      <DependentUpon>Form6_GetName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7_Grandpa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7_Grandpa.Designer.cs">
+      <DependentUpon>Form7_Grandpa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8_SpaceGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8_SpaceGame.Designer.cs">
+      <DependentUpon>Form8_SpaceGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9_InfoSpaceGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9_InfoSpaceGame.Designer.cs">
+      <DependentUpon>Form9_InfoSpaceGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form1_StoryText.resx">
+      <DependentUpon>Form1_StoryText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4_RaceGame.resx">
+      <DependentUpon>Form4_RaceGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_MainMenu.resx">
+      <DependentUpon>Form2_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3_Story.resx">
+      <DependentUpon>Form3_Story.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5_Rankings.resx">
+      <DependentUpon>Form5_Rankings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6_GetName.resx">
+      <DependentUpon>Form6_GetName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7_Grandpa.resx">
+      <DependentUpon>Form7_Grandpa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8_SpaceGame.resx">
+      <DependentUpon>Form8_SpaceGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9_InfoSpaceGame.resx">
+      <DependentUpon>Form9_InfoSpaceGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +151,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
