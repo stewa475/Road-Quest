@@ -23,8 +23,8 @@ namespace RacingGameTutorial
         int level6 = 10000000;
         int pointsPerCookie = 10;
         int pointsPerEnemy = 100;
-        int enemyCookieX = 399;
-        int cookieX = 423;
+        const int enemyCookieX = 399;
+        const int cookieX = 423;
         int halfCarWidth = 26;
         int carSpaceX = 400;
         int laserPosition = 562;
@@ -529,6 +529,7 @@ namespace RacingGameTutorial
                 enemies[i].Top += speed/3;
                 if (enemies[i].Top >= ActiveForm.Height)
                 {
+                    enemies[i].Left = (int)Math.Ceiling(rnd.NextDouble() * enemyCookieX);
                     enemies[i].Top = -enemies[i].Height;
                 }
             }
@@ -540,6 +541,7 @@ namespace RacingGameTutorial
                 enemies2[i].Top += speed/2;
                 if (enemies2[i].Top >= ActiveForm.Height)
                 {
+                    enemies2[i].Left = (int)Math.Ceiling(rnd.NextDouble() * enemyCookieX);
                     enemies2[i].Top = -enemies2[i].Height;
                 }
             }
